@@ -1,60 +1,200 @@
-# Employee-Management-System
+# 🏢 Employee Management System
 
-## GUI-Based Employee Management System using SQLite 3 and Pyqt5
+A desktop-based **Employee Management System** built with **Python, PyQt5, SQLite3, and Plotly**. The application provides an intuitive graphical interface to manage employee records, visualize employee statistics, and perform complete CRUD (Create, Read, Update, Delete) operations efficiently.
 
-In this project, I have designed an application using Pyqt5 and SQLite to manage all employees of a hypothetical company.
-Each employee has an Employee Id (which acts as Primary Key for our table), Name, Lastname, Age, Position, and Email address. This Company will hire people who are older than 18 and younger than 70 years old.
-I have defined a function to generate 40 employees with fake information.
+---
 
+## 📌 Features
 
+- 🔐 Secure Admin Login
+- 👨‍💼 Add new employees
+- 📋 View all employee records in a table
+- 🔍 Search employees instantly
+- ✏️ Update employee details
+- 🗑️ Delete employee records
+- 📊 Interactive employee analytics using Plotly
+- 📈 Salary and employee statistics
+- 🎨 Multiple UI themes
+- 🔤 Change application fonts
+- 📧 Send emails directly to employees using Mailjet API
+- 🧪 Generate fake employee data for testing
 
-### How to run :
+---
 
-**python mainGUI.py**
+## 🛠️ Tech Stack
 
-### Note:
-```diff
+- **Language:** Python
+- **GUI Framework:** PyQt5
+- **Database:** SQLite3
+- **Visualization:** Plotly
+- **Email Service:** Mailjet REST API
 
-+ User and password is admin
+---
 
+## 📂 Employee Information
+
+Each employee record contains:
+
+- Employee ID
+- First Name
+- Last Name
+- Age
+- Salary
+- Position
+- Email Address
+
+### Validation
+
+- Minimum Age: **18**
+- Maximum Age: **70**
+- Employee ID acts as the **Primary Key**.
+
+---
+
+## 📸 Application Screens
+
+- Login Screen
+- Employee Dashboard
+- Search Functionality
+- Update/Delete Records
+- Interactive Charts & Reports
+
+*(You can add screenshots inside a `screenshots/` folder and link them here.)*
+
+---
+
+## 📦 Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/Employee-Management-System.git
 ```
 
+### 2. Navigate into the project
 
-![login-page](https://user-images.githubusercontent.com/47816410/132484334-cdf24c6b-f30a-425e-b39a-8f0264db7cce.png)
+```bash
+cd Employee-Management-System
+```
 
+### 3. Install dependencies
 
+```bash
+pip install -r requirements.txt
+```
 
-![2](https://user-images.githubusercontent.com/47816410/132485705-da50482b-4c0a-43da-a65e-a28ec90db4fb.png)
+---
 
+## ▶️ Run the Application
 
+```bash
+python MainGUI.py
+```
 
-![3](https://user-images.githubusercontent.com/47816410/132486835-01b2c887-ed3d-4e2f-bfb6-482c1c519c6b.png)
+---
 
+## 🔑 Default Login Credentials
 
+| Username | Password |
+|----------|----------|
+| admin | admin |
 
-![4](https://user-images.githubusercontent.com/47816410/132486771-7e5f5103-d6fa-4d92-872c-f9f962383411.png)
+---
 
+## 📊 Analytics
 
+The application provides graphical insights such as:
 
-## Requirements:
-* SQLite
-* Plotly
-* Pyqt5
-* Mailjet_rest
+- Total Employees
+- Total Salary
+- Average Salary by Position
+- Salary Distribution
+- Employee Statistics
 
-check the requirments.txt
+All charts are generated using **Plotly**.
 
-## Features:
-* Login page 
-* Display table
-* Search function 
-* Update data (double click or right click on each cell )
-* Delete data 
-* different themes and fonts
-* Interesting data (such as number of employees, salary per position, average salary per position)
-* Interactive  plots
-* sending email to specific employee **( update use_jet_mail.py file with your jetmail api and email )**
+---
 
-### for more information and video check the link below:
+## 📧 Email Integration
 
-https://ht21992.pythonanywhere.com/en/my_projects/25/
+The system supports sending emails directly to employees using the **Mailjet API**.
+
+Before using this feature:
+
+1. Create a Mailjet account.
+2. Generate your API Key and Secret Key.
+3. Update the credentials inside:
+
+```
+use_jet_mail.py
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Employee-Management-System/
+│
+├── MainGUI.py
+├── authenticate.py
+├── employee.py
+├── sqlite_code.py
+├── use_jet_mail.py
+├── requirements.txt
+├── LICENSE.md
+└── assets/
+```
+
+---
+
+## 📚 Requirements
+
+- Python 3.x
+- PyQt5
+- SQLite3
+- Plotly
+- Mailjet REST API
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Future Improvements
+
+- Role-based authentication
+- Export data to Excel/PDF
+- Employee profile images
+- Attendance management
+- Leave management
+- Payroll generation
+- Dark/Light theme enhancements
+- Cloud database support
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **⭐ Star** on GitHub.
